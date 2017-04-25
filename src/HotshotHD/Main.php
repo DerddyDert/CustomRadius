@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener {
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		@mkdir($this->getDataFolder());
 		$this->cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML, array(
-		"world" => 16
+		"world" => 1
 		));
 		$this->getLogger()->info("is ready to go!");
 	}
